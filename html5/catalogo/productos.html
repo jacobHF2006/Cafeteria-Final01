@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Baristas</title>
+
+    <!-- ===== CSS PRINCIPAL ===== -->
+    <link rel="stylesheet" href="/css/productos.css" />
+    <link rel="stylesheet" href="/css/contactanos.css" />
+    <link rel="stylesheet" href="/css/sobre_nosotros.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- ===== ICONOS FONT AWESOME ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="container-hero">
+        <div class="container hero">
+          <div class="customer-support">
+            <i class="fa-solid fa-headset"></i>
+            <div class="content-customer-support">
+              <span class="text">Atención al cliente</span>
+              <span class="number">901-223-125</span>
+            </div>
+          </div>
+
+          <div class="container-logo">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h1 class="logo"><a href="/">Baristas</a></h1>
+          </div>
+
+          <div class="container-user">
+            <a href="/html5/catalogo/registro.html">
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <i id="cart-icon" class="fa-solid fa-basket-shopping"></i>
+            <div class="content-shopping-cart">
+              <span class="text">Carrito</span>
+              <span class="number" id="cart-count">(0)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-navbar">
+        <nav class="navbar container">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="menu">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="/html5/catalogo/productos.html">Productos</a></li>
+            <li><a href="/html5/catalogo/sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="/html5/catalogo/contactanos.html">Contactanos</a></li>
+            <li><a href="/html5/catalogo/blog.html">Blog</a></li>
+            <li><a href="/html5/catalogo/registro.html" class="crear-cuenta">Crear cuenta</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== SECCIÓN PRODUCTOS ===== -->
+    <main class="container productos-section">
+      <h2 class="heading-1">Nuestros Productos</h2>
+
+      <!-- CATEGORÍA 1 -->
+      <section class="categoria">
+        <h3>Café Moca</h3>
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="https://apasionados-por-el-cafe.s3.amazonaws.com/wp-content/uploads/2016/11/bg-video-mocca.png" alt="Moca Clásico" />
+            <h4>Moca Clásico</h4>
+            <p>Sabor equilibrado con toque de cacao.</p>
+            <span class="precio">12.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://images.ctfassets.net/0e6jqcgsrcye/1gLquYhzCSlRytje01yPWD/b5e2dcc8f7e51f9dab685225ba67ae0d/icedmocha_thumbnail.jpg" alt="Moca Helado" />
+            <h4>Moca Helado</h4>
+            <p>Refrescante combinación de café y hielo.</p>
+            <span class="precio">14.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://mui.kitchen/__export/1663770105263/sites/muikitchen/img/2022/09/21/cafx_helado_9_homef.jpg_1203770854.jpg" alt="Moca Vainilla" />
+            <h4>Moca Vainilla</h4>
+            <p>Suavidad y aroma dulce de la vainilla.</p>
+            <span class="precio">13.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse1.mm.bing.net/th/id/OIP._OpmX63FfXXzeMrro023JgHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Moca Doble Shot" />
+            <h4>Moca Doble Shot</h4>
+            <p>Más intensidad para verdaderos amantes del café.</p>
+            <span class="precio">15.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORÍA 2 -->
+      <section class="categoria">
+        <h3>Café Americano</h3>
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.r3K1WTuOqmBRqQnVyQWGKAHaD3?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Americano Clásico" />
+            <h4>Americano Clásico</h4>
+            <p>Café suave y equilibrado, ideal para cualquier momento.</p>
+            <span class="precio">10.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.7kh-aQsoXtKc5X4yL7mi4gHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Americano Doble" />
+            <h4>Americano Doble</h4>
+            <p>Una dosis extra para comenzar el día con energía.</p>
+            <span class="precio">12.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.ktax6Eg_ZINJkkkpDiKKfQHaJ4?cb=12&w=1200&h=1600&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Americano Frío" />
+            <h4>Americano Frío</h4>
+            <p>Perfecto para los días calurosos.</p>
+            <span class="precio">11.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.dog0tk5ADIs0T2Jgf5Z_tgHaE7?cb=12&w=1280&h=853&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Americano Especial" />
+            <h4>Americano Especial</h4>
+            <p>Hecho con granos seleccionados de altura.</p>
+            <span class="precio">13.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORÍA 3 -->
+      <section class="categoria">
+        <h3>Capuchino</h3>
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.MU8H2jysSzaRGqPOewS-zgHaEW?cb=12&w=850&h=500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Capuchino Clásico" />
+            <h4>Capuchino Clásico</h4>
+            <p>Mezcla perfecta de leche espumada y café intenso.</p>
+            <span class="precio">13.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://th.bing.com/th/id/R.2ba33251c17e87606142384f35ae78da?rik=gcRy5BYgv8aLoA&pid=ImgRaw&r=0" alt="Capuchino Caramelo" />
+            <h4>Capuchino Caramelo</h4>
+            <p>Toque dulce que realza su sabor cremoso.</p>
+            <span class="precio">14.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.bXurh2OwDSR-61Chxeno0gAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Capuchino Chocolate" />
+            <h4>Capuchino Chocolate</h4>
+            <p>Con cacao espolvoreado para una experiencia deliciosa.</p>
+            <span class="precio">14.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.RwuJCGu8w7SQYEnaRPJwggHaFj?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Capuchino Vainilla" />
+            <h4>Capuchino Vainilla</h4>
+            <p>Suavidad y aroma para los paladares delicados.</p>
+            <span class="precio">13.50</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORÍA 4 -->
+      <section class="categoria">
+        <h3>Cafés de Especialidad</h3>
+        <div class="productos-grid">
+          <div class="producto">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.ISWuWvgJv7UGFoX0PmWZZgHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Café Andino" />
+            <h4>Café Andino</h4>
+            <p>Granos seleccionados de la sierra peruana.</p>
+            <span class="precio">16.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tosepan.org.mx/103-large_default/cafe-organico-certificado-tosepan-450grs.jpg" alt="Café Orgánico" />
+            <h4>Café Orgánico</h4>
+            <p>Libre de químicos, sabor puro y natural.</p>
+            <span class="precio">18.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.0tmU53yT-9FFU1yg1dnvSAHaLH?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Café Reserva" />
+            <h4>Café Reserva</h4>
+            <p>Edición limitada con tostado artesanal.</p>
+            <span class="precio">20.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img src="https://kafo.cafe/wp-content/uploads/2020/07/KF-BDLC-01-800x800.jpg" alt="Café Blend de la Casa" />
+            <h4>Café Blend de la Casa</h4>
+            <p>Combinación exclusiva de granos seleccionados.</p>
+            <span class="precio">17.00</span>
+            <button class="btn-agregar">Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>&copy; 2025 Baristas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ===== LIBRERÍA jsPDF PARA PDF ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- ===== TU SCRIPT PRINCIPAL ===== -->
+    <script src="/JS/productos.js" defer></script>
+		<script src="/JS/contactanos.js" defer></script>
+		<script src="/JS/index.js" defer></script>
+		<script src="/JS/sobre_nosotros.js" defer></script>
+		<script src="/JS/registro.js" defer></script>
+  </body>
+</html>
