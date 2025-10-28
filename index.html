@@ -68,7 +68,7 @@
 					</div>
 
 					<div class="container-user">
-						<a href="/html5/catalogo/registro.html">
+						<a href="html5/catalogo/registro.html">
                           <i class="fa-solid fa-user"></i>
                         </a>
 						<i class="fa-solid fa-basket-shopping"></i>
@@ -141,12 +141,12 @@
         <nav class="navbar container">
           <i class="fa-solid fa-bars"></i>
           <ul class="menu">
-            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="html5/catalogo/productos.html">Productos</a></li>
-            <li><a href="/html5/catalogo/sobre_nosotros.html">Sobre nosotros</a></li>
-            <li><a href="/html5/catalogo/contactanos.html">Contactanos</a></li>
-            <li><a href="/html5/catalogo/blog.html">Blog</a></li>
-            <li><a href="/html5/catalogo/registro.html" class="crear-cuenta">Crear cuenta</a></li>
+            <li><a href="html5/catalogo/sobre_nosotros.html">Sobre nosotros</a></li>
+            <li><a href="html5/catalogo/contactanos.html">Contactanos</a></li>
+            <li><a href="html5/catalogo/blog.html">Blog</a></li>
+            <li><a href="html5/catalogo/registro.html" class="crear-cuenta">Crear cuenta</a></li>
           </ul>
         </nav>
       </div>
@@ -163,7 +163,7 @@
       <div class="content-banner">
         <p>Café Especialidad</p>
         <h2>100% Natural <br />Café Fresco</h2>
-        <a href="/html5/catalogo/productos.html">Comprar ahora</a>
+        <a href="html5/catalogo/productos.html">Comprar ahora</a>
       </div>
     </section>
 
@@ -204,15 +204,15 @@
         <div class="container-categories">
           <div class="card-category category-moca">
             <p>Café moca</p>
-            <a href="/html5/catalogo/productos.html">Ver más </a>
+            <a href="html5/catalogo/productos.html">Ver más </a>
           </div>
           <div class="card-category category-expreso">
             <p>Expreso Americano</p>
-            <a href="/html5/catalogo/productos.html">Ver más </a>
+            <a href="html5/catalogo/productos.html">Ver más </a>
           </div>
           <div class="card-category category-capuchino">
             <p>Capuchino</p>
-            <a href="/html5/catalogo/productos.html">Ver más </a>
+            <a href="html5/catalogo/productos.html">Ver más </a>
           </div>
         </div>
       </section>
@@ -594,19 +594,19 @@
           <div class="information">
             <p class="title-footer">Información</p>
             <ul>
-              <li><a href="/html5/catalogo/sobre_nosotros.html">Acerca de Nosotros</a></li>
-              <li><a href="/html5/info_banner/informacio_delivery.html">Información Delivery</a></li>
-              <li><a href="/html5/info_banner/politicas_privacidad.html">Politicas de Privacidad</a></li>
-              <li><a href="/html5/info_banner/terminos_condiciones.html">Términos y condiciones</a></li>
-              <li><a href="/html5/catalogo/contactanos.html">Contactános</a></li>
+              <li><a href="html5/catalogo/sobre_nosotros.html">Acerca de Nosotros</a></li>
+              <li><a href="html5/info_banner/informacio_delivery.html">Información Delivery</a></li>
+              <li><a href="html5/info_banner/politicas_privacidad.html">Politicas de Privacidad</a></li>
+              <li><a href="html5/info_banner/terminos_condiciones.html">Términos y condiciones</a></li>
+              <li><a href="html5/catalogo/contactanos.html">Contactános</a></li>
             </ul>
           </div>
 
           <div class="my-account">
             <p class="title-footer">Mi cuenta</p>
             <ul>
-              <li><a href="/html5/catalogo/registro.html">Mi cuenta</a></li>
-              <li><a href="/html5/info_banner/reembolsos.html">Reembolsos</a></li>
+              <li><a href="html5/catalogo/registro.html">Mi cuenta</a></li>
+              <li><a href="html5/info_banner/reembolsos.html">Reembolsos</a></li>
             </ul>
           </div>
 
@@ -638,33 +638,11 @@
     </footer>
 
     <!-- ===== TUS SCRIPTS PRINCIPALES ===== -->
-    <script defer src="/JS/productos.js" ></script>
-    <script defer src="/JS/contactanos.js" ></script>
-    <script defer src="/JS/sobre_nosotros.js"></script>
-    <script defer src="/JS/blog.js" ></script>
-	  <script defer src="/JS/registro.js" ></script>
+    <script defer src="JS/productos.js" ></script>
+    <script defer src="JS/contactanos.js" ></script>
+    <script defer src="JS/sobre_nosotros.js"></script>
+    <script defer src="JS/blog.js" ></script>
+	  <script defer src="JS/registro.js" ></script>
     
-
-    <!-- Script pequeño para mostrar banner de promoción si existe en localStorage -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        try {
-          const usuarioActivo = JSON.parse(localStorage.getItem('usuarioActivo'));
-          if (usuarioActivo && usuarioActivo.promo) {
-            const banner = document.getElementById('banner-promo');
-            const texto = document.getElementById('texto-promo');
-            const codigo = document.getElementById('codigo-promo');
-            texto.textContent = `¡Hola ${usuarioActivo.nombre}! Te hemos asignado una promoción: ${usuarioActivo.promo.descripcion}`;
-            codigo.textContent = `Código: ${usuarioActivo.promo.codigo} — ${usuarioActivo.promo.desc}`;
-            banner.style.display = 'block';
-            document.getElementById('close-promo').addEventListener('click', () => banner.style.display = 'none');
-          }
-        } catch(e) {
-          console.warn('Error leyendo usuarioActivo:', e);
-        }
-      });
-
-      
-    </script>
   </body>
 </html>
