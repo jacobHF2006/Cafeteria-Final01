@@ -202,11 +202,15 @@ html {
 /*               BANNER               */
 /* ********************************** */
 .banner {
-	background-image: linear-gradient(100deg, #000000, #00000020),
-		url('https://vienna4u.at/wp-content/uploads/2019/09/coffee-houses-vienna.jpg');
-	height: 60rem;
-	background-size: cover;
-	background-position: center;
+    background-image: linear-gradient(100deg, #000000, #00000020),
+        url('https://vienna4u.at/wp-content/uploads/2019/09/coffee-houses-vienna.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .content-banner {
